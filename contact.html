@@ -1,177 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact | Zenoura</title>
-
-  <!-- Google Auto Ads -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2696059232288635" crossorigin="anonymous"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Zenoura</title>
   <style>
-    :root{
-      --bg-1:#0e0111;
-      --bg-2:#1b0420;
-      --accent:#b95cff;
-      --muted:#cfc7db;
+    body {
+      background-color: #000;
+      color: #FFD700;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
-    body{
-      margin:0;
-      font-family:"Poppins",sans-serif;
-      background:linear-gradient(180deg,var(--bg-1),var(--bg-2));
-      color:#fff;
-      line-height:1.6;
+    header, footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1em 0;
+      border-bottom: 2px solid #FFD700;
     }
-    header{
-      position:fixed;top:0;left:0;right:0;height:70px;
-      background:rgba(10,2,12,0.8);
-      display:flex;align-items:center;justify-content:space-between;
-      padding:0 20px;
-      backdrop-filter:blur(10px);
-      border-bottom:1px solid rgba(185,92,255,0.1);
-      z-index:1000;
+    nav a {
+      color: #FFD700;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
-    .brand{color:var(--accent);font-weight:800;letter-spacing:3px;}
-    .menu a{
-      margin-left:20px;text-decoration:none;color:#fff;font-weight:600;
-      transition:color .2s;
+    nav a:hover {
+      color: white;
     }
-    .menu a:hover{color:var(--accent);}
-    .container{max-width:900px;margin:120px auto 60px;padding:0 20px;}
-    h1{color:var(--accent);margin-bottom:20px;}
-    p{color:var(--muted);}
-    footer{text-align:center;color:#888;padding:30px 10px;border-top:1px solid rgba(185,92,255,0.1);}
-    form{
-      margin-top:30px;
-      display:flex;flex-direction:column;
-      gap:15px;
-      background-color:rgba(255,255,255,0.05);
-      padding:20px;border-radius:15px;
-      box-shadow:0 0 15px rgba(185,92,255,0.1);
+    main {
+      padding: 2em;
+      max-width: 600px;
+      margin: auto;
     }
-    input,textarea{
-      background-color:#140117;
-      border:1px solid rgba(185,92,255,0.3);
-      border-radius:10px;
-      padding:10px;
-      color:#fff;
-      font-size:15px;
-      resize:none;
+    h1, h2 {
+      color: #FFD700;
+      text-align: center;
     }
-    input:focus,textarea:focus{
-      outline:none;
-      border-color:var(--accent);
-      box-shadow:0 0 8px rgba(185,92,255,0.4);
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #FFD700;
     }
-    button[type=submit]{
-      background:var(--accent);
-      color:#fff;
-      border:none;
-      padding:12px;
-      border-radius:12px;
-      font-weight:600;
-      cursor:pointer;
-      transition:all .3s;
+    input, textarea {
+      background-color: #000;
+      border: 1px solid #FFD700;
+      color: #FFD700;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 1em;
     }
-    button[type=submit]:hover{
-      background:#a14cff;
-      transform:scale(1.03);
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: white;
     }
-    .lang-switch{margin-top:20px;}
-    .lang-switch button{
-      margin:0 5px;
-      background:transparent;
-      border:1px solid rgba(185,92,255,0.3);
-      color:#fff;
-      border-radius:10px;
-      padding:6px 10px;
-      cursor:pointer;
-      font-weight:600;
+    button {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
     }
-    .lang-switch button.active{
-      background:rgba(185,92,255,0.1);
-      color:var(--accent);
+    button:hover {
+      background-color: white;
+      color: black;
+    }
+    footer {
+      border-top: 2px solid #FFD700;
+      margin-top: 2em;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <div class="brand">ZENOURA</div>
-    <div class="menu">
-      <a href="index.html">🏠 Home</a>
-      <a href="about.html">💎 About</a>
-      <a href="policy.html">📜 Policy</a>
-      <a href="affiliate.html">💼 Affiliate</a>
-    </div>
+    <h1>Zenoura</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="affiliate.html">Affiliate</a>
+      <a href="contact.html">Contact</a>
+      <a href="policy.html">Policy</a>
+    </nav>
   </header>
 
-  <main class="container" id="content">
-    <h1 id="title">Contact Us</h1>
-    <p id="desc">Have questions or feedback? Send us a message below — we’d love to hear from you!</p>
+  <main>
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
 
-    <form id="contactForm">
-      <input type="text" id="name" name="name" placeholder="Your Name" required />
-      <input type="email" id="email" name="email" placeholder="Your Email" required />
-      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
       <button type="submit">Send Message</button>
     </form>
-
-    <div class="lang-switch">
-      <button data-lang="en" class="active">🇬🇧 EN</button>
-      <button data-lang="ar">🇸🇦 AR</button>
-      <button data-lang="de">🇩🇪 DE</button>
-    </div>
   </main>
 
-  <footer>© 2025 Zenoura. All rights reserved.</footer>
-
-  <script>
-    const title=document.getElementById("title");
-    const desc=document.getElementById("desc");
-    const btns=document.querySelectorAll(".lang-switch button");
-    const form=document.getElementById("contactForm");
-
-    const translations={
-      en:{
-        title:"Contact Us",
-        desc:"Have questions or feedback? Send us a message below — we’d love to hear from you!",
-        placeholders:["Your Name","Your Email","Your Message","Send Message"]
-      },
-      ar:{
-        title:"اتصل بنا",
-        desc:"هل لديك أسئلة أو ملاحظات؟ أرسل لنا رسالة أدناه — يسعدنا التواصل معك!",
-        placeholders:["اسمك","بريدك الإلكتروني","رسالتك","إرسال الرسالة"]
-      },
-      de:{
-        title:"Kontakt",
-        desc:"Haben Sie Fragen oder Feedback? Senden Sie uns unten eine Nachricht — wir freuen uns, von Ihnen zu hören!",
-        placeholders:["Ihr Name","Ihre E-Mail","Ihre Nachricht","Nachricht senden"]
-      }
-    };
-
-    btns.forEach(btn=>{
-      btn.addEventListener("click",()=>{
-        btns.forEach(b=>b.classList.remove("active"));
-        btn.classList.add("active");
-        const lang=btn.dataset.lang;
-        const t=translations[lang];
-        title.textContent=t.title;
-        desc.textContent=t.desc;
-        const inputs=form.querySelectorAll("input,textarea,button");
-        inputs[0].placeholder=t.placeholders[0];
-        inputs[1].placeholder=t.placeholders[1];
-        inputs[2].placeholder=t.placeholders[2];
-        inputs[3].textContent=t.placeholders[3];
-        document.body.dir=(lang==="ar")?"rtl":"ltr";
-      });
-    });
-
-    form.addEventListener("submit",e=>{
-      e.preventDefault();
-      alert("Thank you for your message! (Demo form only)");
-      form.reset();
-    });
-  </script>
+  <footer>
+    <p>&copy; 2025 Zenoura. All rights reserved.</p>
+  </footer>
 </body>
 </html>
